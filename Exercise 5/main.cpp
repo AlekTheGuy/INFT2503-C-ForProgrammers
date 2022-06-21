@@ -33,7 +33,13 @@ class ChessBoard {
   };
 
   class King : public Piece {
-    std::string type() const override { return color_string() + " king"; }
+    std::string type() const override {
+      if (color == Color::WHITE) {
+        return "WK";
+      } else {
+        return "BK";
+      }
+    }
 
     bool valid_move(int from_x, int from_y, int to_x, int to_y) const override {
       if (abs(to_x - from_x) <= 1 && abs(to_y - from_y) <= 1) {
@@ -48,7 +54,13 @@ class ChessBoard {
   };
 
   class Knight : public Piece {
-    std::string type() const override { return color_string() + " knight"; }
+    std::string type() const override {
+      if (color == Color::WHITE) {
+        return "WN";
+      } else {
+        return "BN";
+      }
+    }
 
     bool valid_move(int from_x, int from_y, int to_x, int to_y) const override {
       if (((abs(to_x - from_x) == 1) && (abs(to_y - from_y) == 2)) ||
@@ -85,6 +97,7 @@ class ChessBoard {
       if (piece_from->valid_move(from_x, from_y, to_x, to_y)) {
         cout << piece_from->type() << " is moving from " << from << " to " << to
              << endl;
+        std::cout << get_board_pos() << std::endl;
         auto &piece_to = squares[to_x][to_y];
         if (piece_to) {
           if (piece_from->color != piece_to->color) {
@@ -110,6 +123,27 @@ class ChessBoard {
       cout << "no piece at " << from << endl;
       return false;
     }
+  }
+
+  std::string get_board_pos() {
+    int counter = 0;
+    string board;
+    vector<string> rows(8);
+    for (auto &column : squares) {
+      for (auto &p : column) {
+        if (p == nullptr) {
+          rows[counter].append("|  |");
+        } else {
+          rows[counter].append("|" + p->type() + "|");
+        }
+        counter++;
+      }
+      counter = 0;
+    }
+    for (int i = rows.size() - 1; i >= 0; i--) {
+      board.append(rows[i] + "\n");
+    }
+    return board;
   }
 };
 
