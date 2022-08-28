@@ -32,7 +32,7 @@ int main() {
 }
 
 void read_temperatures(double temperatures[], int length) {
-  const char filename[] = "../tallfil.txt";
+  const char filename[] = "../tallfil.dat";
   std::ifstream file;
   file.open(filename);
   if (!file) {
@@ -41,9 +41,9 @@ void read_temperatures(double temperatures[], int length) {
   }
 
   int number;
-  int counter = 0;
-  for (size_t i = 0; i < length; i++) {
+  for (int i = 0; i < length; i++) {
     file >> number;
     temperatures[i] = number;
   }
+  file.close();
 }

@@ -1,3 +1,0 @@
-/Users/alek/Library/Mobile Documents/com~apple~CloudDocs/Documents/Dataing bachelor/5. semester/INFT2503-CPPForProgrammers/Exercise 6/Task 1/build/CMakeFiles/main.dir
-/Users/alek/Library/Mobile Documents/com~apple~CloudDocs/Documents/Dataing bachelor/5. semester/INFT2503-CPPForProgrammers/Exercise 6/Task 1/build/CMakeFiles/edit_cache.dir
-/Users/alek/Library/Mobile Documents/com~apple~CloudDocs/Documents/Dataing bachelor/5. semester/INFT2503-CPPForProgrammers/Exercise 6/Task 1/build/CMakeFiles/rebuild_cache.dir
