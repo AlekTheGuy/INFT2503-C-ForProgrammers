@@ -1,3 +1,0 @@
-/Users/alek/Documents/Dataing bachelor/5. semester/INFT2503-CPPForProgrammers/Exercise 7/Task 1/build/CMakeFiles/main.dir
-/Users/alek/Documents/Dataing bachelor/5. semester/INFT2503-CPPForProgrammers/Exercise 7/Task 1/build/CMakeFiles/edit_cache.dir
-/Users/alek/Documents/Dataing bachelor/5. semester/INFT2503-CPPForProgrammers/Exercise 7/Task 1/build/CMakeFiles/rebuild_cache.dir
