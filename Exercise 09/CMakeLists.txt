@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.1)
+
+project(main)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")
+
+add_executable(a a/main.cpp)
+add_executable(b b/main.cpp)
+add_executable(c c/main.cpp)
