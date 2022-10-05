@@ -1,0 +1,4 @@
+b) Teori: Forklar hvordan 5 - 3 - fraction1 - 7 - fraction2 blir tolket. Hvilke versjoner av operatoren - blir brukt?
+
+Dette blir tolket som (((5 - 3) - fraction 1) - 7) - fraction2
+Uttrykket går fra venstre mot høyre.
